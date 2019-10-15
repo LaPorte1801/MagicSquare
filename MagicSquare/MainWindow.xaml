@@ -11,7 +11,14 @@
             <ColumnDefinition Width="0.25*"/>
             <ColumnDefinition Width="0.75*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btnGenerate" Content="generate" HorizontalAlignment="Left" Margin="65,191,0,0" VerticalAlignment="Top" Width="75" Click="btnGenerate_Click"/>
+        <StackPanel Grid.Column="0">
+            <TextBlock HorizontalAlignment="Left" Margin="5" TextWrapping="Wrap" Text="Size: " VerticalAlignment="Top" FontSize="16"/>
+            <TextBox x:Name="tbxSize" Height="20" Width="100" Margin="5" HorizontalAlignment="Left"/>
+            <Button x:Name="btnGenerate" Content="generate" HorizontalAlignment="Left" VerticalAlignment="Center" Width="74" Click="btnGenerate_Click" Margin="5"/>
+        </StackPanel>
+        <Grid x:Name="grid" Grid.Column="1">
+            
+        </Grid>
 
     </Grid>
 </Window>
