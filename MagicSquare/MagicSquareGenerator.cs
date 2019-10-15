@@ -22,6 +22,14 @@ namespace MagicSquare
                 }
             }
 
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    result[i][j] = 1 + ((i + j - 1 + (size - 1) / 2) % size) * size + ((i + 2 * j + 2) % size);
+                }
+            }
+
             return result;
         }
     }
